@@ -1,0 +1,60 @@
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  max-width: 30rem;
+  width: 100%;
+  max-height: 15rem;
+  height: 100%;
+  border-radius: 6px;
+  animation: zoomIn 500ms both;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: #ffffff;
+}
+
+.modal input {
+  border: none;
+  padding: 0.6rem 1rem;
+  outline: none;
+  margin: 1rem 0;
+}
+
+.modal button {
+  border: none;
+  padding: 0.5rem 3rem;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #111111;
+}
+
+.open-modal-button {
+  border: none;
+  padding: 1rem 3rem;
+  background: #8c4bff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.open-modal-button:hover {
+  background: #9e68fc;
+}
